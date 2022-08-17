@@ -3,10 +3,11 @@ import pandas as pd
 import numpy as np
 # import local funcionts
 from functions import preprocessing_data, vip_criteria, last_time_vip, last_month_status
+import sys, os
 
 # %%
 import json
-with open("pur_list.json", "r") as fp:
+with open(os.path.join(sys.path[0], "pur_list.json"), "r") as fp:
      pur_list = json.load(fp)
 
 # %%
