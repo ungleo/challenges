@@ -49,16 +49,13 @@ def vip_criteria(df_group,criteria_months):
     users_status_dict = {}
     users_vip_dict = {}
     for u in users_list:
-        # print('user: '+str(u))
         # it calculates the last month for the current user
         user_last_month = df_group[df_group.user == u]['date_month'].max().replace(day=1)
         # it checks if the user is vip or not and add it to the dictionary
         if user_check(u,df_group,user_last_month,criteria_months):
-            # print(user_check(u,df_group,user_last_month,criteria_months))
             users_status_dict[u]=True
             users_vip_dict[u]=True
         else:
-            # print(user_check(u,df_group,user_last_month,criteria_months))
             users_status_dict[u]=False
             continue
     # returns a dict with the vip users and the status of all of the users
