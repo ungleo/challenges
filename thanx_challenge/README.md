@@ -22,6 +22,7 @@ The outputs are:
 ## Explanation
 In this folder you will find:
 * pur_list.json : this is the input file
+* parameters.py : here we can set up the threshold and the number of consecutives months for the VIP criteria
 * functions.py : here we have all the functions that are going to be use
 * main.py : the main file which runs the program
 * exploratory.ipynb : this was the notebook that I used to build the code and the one which I used to check some examples 
