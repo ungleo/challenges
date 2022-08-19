@@ -14,16 +14,14 @@ Optional: add logic to generate sample purchase data
  
 ## Interpretation
 The input of this version of the program is going to a json that was shared (I've added a couple of examples in order to test the different possibilities).
-This program is going to create a data frame with all the transactions, analyze the monthly purchases per user and check if the total is $100 or higher in two consecutives months.
+This program is going to create a data frame with all the transactions, analyze the monthly purchases per user and check if the total amount is equal or higher than the threshold for the last n consecutives months.
 The outputs are:
-* a dataframe with the last time that a user was a VIP with the monthly amount and the previous monthly amount with the date
-* a data frame with the last status for each of the users
-* a data frame with the users who were VIP in their last month
+* a dictionary with the status of all of the customers
+* a dictionary with only the vip customers
  
 ## Explanation
 In this folder you will find:
 * pur_list.json : this is the input file
 * functions.py : here we have all the functions that are going to be use
-* main.py : the main file
+* main.py : the main file which runs the program
 * exploratory.ipynb : this was the notebook that I used to build the code
-* test.ipynb: this is the notebook that I used to do debugging
