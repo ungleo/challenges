@@ -1,9 +1,7 @@
-# %%
-import pandas as pd
-import numpy as np
+# this is the main code to run the program to check if a user has the VIP status
 # import local funcionts
 from parameters import threshold, criteria_months
-from functions import monthly_purchases,user_check, vip_criteria
+from functions import monthly_purchases,vip_criteria
 import sys, os
 
 # %%
