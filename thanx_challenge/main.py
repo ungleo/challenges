@@ -3,9 +3,8 @@
 from parameters import threshold, criteria_months
 from functions import monthly_purchases,vip_criteria
 import sys, os
-
-# %%
 import json
+
 with open(os.path.join(sys.path[0], "pur_list.json"), "r") as fp:
      pur_list = json.load(fp)
 
