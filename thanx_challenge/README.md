@@ -24,4 +24,4 @@ In this folder you will find:
 * pur_list.json : this is the input file
 * functions.py : here we have all the functions that are going to be use
 * main.py : the main file which runs the program
-* exploratory.ipynb : this was the notebook that I used to build the code
+* exploratory.ipynb : this was the notebook that I used to build the code and the one which I used to check some examples 
